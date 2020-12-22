@@ -1,1 +1,157 @@
+<!DOCTYPE html>
+<html xmlns ="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Title of the document</title>
+<script>
+	var text = "Welcome to HTML with CSS!";
+</script>
+
+<link rel="stylesheet" href="style.css"></link>
+<script type="text/javascript" src="index.js"/>
+
+</head>
+
+<body> 
 <div id="app"></div>
+<h1>This is H1</h1>
+<h2 id="h2Id">This is H2</h2>
+<h3>This is H3</h3>
+<h4>This is H4</h4>
+<h5>This is H5</h5>
+<h6>This is H6</h6>
+
+<p class="pClass">
+This is Paragraph. 
+This has so many attributes.
+Like title.
+</p>
+
+<pre 
+style="background-color : red;font-size : 10px ;color:white">
+This is Paragraph. 
+This has so many attributes.
+Like title.
+</pre>
+<br/>
+
+<a href="https://www.google.com" target="_blank">click link</a>
+<br/>
+
+<!--<img id="im" alt="some info about image" src ="w3schools.jpg" width="100" height="100"/>-->
+<br/>
+<strong>This is strong</strong><br/>
+<b>This is bold </b><br/>
+<i>THis is italic</i><br/>
+<small>This is small</small><br/>
+<mark>This is mark</mark><br/>
+<del> deleted </del><br/>
+<em> emum</em><br/>
+
+<caption>Students phone book</caption>
+<table id="tabId" style="width:100%">
+
+  <tr>
+    <th rowspan="2">Name:</th>
+    <th colspan="2">Phone number</th>
+  </tr>
+  <tr>
+    <td>Home:</td>
+    <td>Phone number:</td>
+  </tr>
+
+<tr>
+    <td>Bill Gates</td>
+    <td>1234567567</td>
+	<td>1234567567</td>
+</tr>
+
+<tr>
+    <td>John Smith</td>
+    <td>1111111111</td>
+    <td>2222222222</td>
+</tr>
+
+<tr>
+    <td>Manali Moholkar</td>
+    <td>3333333333</td>
+    <td></td>
+</tr>
+</table>
+
+
+
+<br/>
+
+<ul style ="list-style-type:circle">
+	<li>milk</li>
+	<li>egg</li>
+	<li>veggies</li>
+</ul>
+
+<ol type ="A">
+	<li>milk</li>
+	<li>egg</li>
+	<li>veggies</li>
+</ol>
+
+<dl>
+	<dt>frozen -
+		<dd>peas</dd>
+		<dd>ice cream </dd>
+	</dt>
+	<dt>stationary -
+		<dd>pen</dd>
+	</dt>
+	<dt>medicine -
+		<dd>tab</dd>
+		<dd>lotion</dd>
+		<dd>syrup</dd>
+	</dt>
+
+
+</dl>
+
+<!-- <iframe src ="https://google.com" title ="google page" height="100" width="200"></iframe> -->
+
+<p style="font-size:48px"> Some emojies :
+&#128512; &#128516; &#128525; &#128151;
+</p>
+
+<form>
+<input type="text" id="nameText" onclick = "clicked()" value = "Welcome"></input>
+</form>
+
+Sum is : <input type="text" id="sumText"></input>
+
+
+
+</body>
+
+<script>
+
+<![CDATA[ // added as for loop not working without this
+
+var num1 = prompt("enter first number");
+var num2 = prompt("enter second number");
+var sum = sumFunction(num1,num2);
+document.getElementById("sumText").value = sum;
+
+var arr = [];
+for(var i=0; i<3; i++){
+ 	var nm = prompt("Enter Name"+ (i+1)+" :");
+ 	arr.push(nm);
+ 	console.log(arr[i]);
+}
+
+arr.sort();
+
+console.log(arr[0]);
+console.log(arr[1]);
+console.log(arr[2]);
+
+
+]]>
+</script>
+
+
+</html>

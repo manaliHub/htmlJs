@@ -1,3 +1,39 @@
-h1, h2 {
+h1,
+h2 {
   font-family: Lato;
+}
+
+.pClass {
+  background-color: aqua;
+  color: red;
+  font-size: 20px;
+  text-align: center;
+  font-family: vernada;
+}
+
+h1 {
+  background-color: green;
+}
+
+#h2Id {
+  background-color: black;
+  color: white;
+}
+
+a {
+  color: white;
+  background-color: green;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: left;
+  padding: 3px;
+}
+
+table {
+  border-spacing: 3px;
 }
